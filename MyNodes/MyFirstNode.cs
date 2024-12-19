@@ -17,11 +17,14 @@ namespace TouchNode
         /// <summary>
         /// Returns a string that says hello world
         /// </summary>
+        /// <param name="extraMessage">Optional extra message from dynamo</param>
         /// <returns name="helloWorldString">Our hello world node.</returns>
-        public static string HelloWorld(string username)
+        public static string HelloWorld(string extraMessage = "")
         {
+            string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+
             // returns one node
-            return $"Hello {username}";
+            return $"Hello, {userName}. {extraMessage}";
         }
     }
 }
