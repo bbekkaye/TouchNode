@@ -8,10 +8,12 @@ namespace TouchNode
 {
     public class MyFirstNode
     {
-        public MyFirstNode() { }
+        // This hides the overall class as a node
+        private MyFirstNode() { }
         public static string HelloWorld()
         {
-            return "Hello world";
+            // returns one node
+            return "Hello world " + DateTime.Now;
         }
     }
 }
