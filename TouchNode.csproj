@@ -32,6 +32,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AdWindows, Version=5.0.3.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Revit_All_Main_Versions_API_x64.2024.2.0\lib\net48\AdWindows.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="DSRevitNodesUI, Version=3.0.0.3416, Culture=neutral, processorArchitecture=AMD64">
       <HintPath>packages\DynamoVisualProgramming.Revit.3.0.0.3416\lib\DSRevitNodesUI.dll</HintPath>
     </Reference>
@@ -43,6 +48,16 @@
     </Reference>
     <Reference Include="ProtoGeometry, Version=3.4.0.3055, Culture=neutral, processorArchitecture=AMD64">
       <HintPath>packages\DynamoVisualProgramming.ZeroTouchLibrary.3.4.1.7055\lib\netstandard2.0\ProtoGeometry.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPI, Version=24.2.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>packages\Revit_All_Main_Versions_API_x64.2024.2.0\lib\net48\RevitAPI.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI, Version=24.2.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>packages\Revit_All_Main_Versions_API_x64.2024.2.0\lib\net48\RevitAPIUI.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="RevitNodes, Version=3.0.0.3416, Culture=neutral, processorArchitecture=AMD64">
       <HintPath>packages\DynamoVisualProgramming.Revit.3.0.0.3416\lib\RevitNodes.dll</HintPath>
@@ -80,10 +95,16 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIFramework, Version=24.2.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>packages\Revit_All_Main_Versions_API_x64.2024.2.0\lib\net48\UIFramework.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MyNodes\MyFirstNode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Revit\Views\Sheet.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -92,5 +113,6 @@
   <ItemGroup>
     <Content Include="images\logo.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
